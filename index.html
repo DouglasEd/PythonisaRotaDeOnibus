@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <div class="logo"></div>
+    </div>
+    <div class="titlebox">
+        <div class="title">Pythonisa</div>
+        <div class="subtitle">Já pensou acompanhar o trajeto dos ônibus em Macapá?</div>
+    </div>
+    <img src="images/v4_3.png" alt="" class="onibus">
+    <div class="toptitle">Quem somos?</div>
+    <div class="txt">O projeto Pythonisa é um projeto de pesquisa da Unifap, financiado pelo CNPQ, que visa monitorar ônibus com o uso de visão computacional para permitir o monitoramento dos ônibus de Macapá e realizar a predição dos horários para os usuários.</div>
+    <div class="sectionblock">
+        <img src="images/v4_6.png" alt="" class="map">
+        <div>
+            <div class="toptitle" style="padding-top: 100px;">Rotas</div>
+        <form action="rota.php" method="get">
+            <div class="block">
+                <div class="blocktitle">Companhia</div>
+                <select name="Companhia" id="Companhia" class="select" onclick="atualizarOpcoes()">
+                    <option value="Sião-Thur">Sião-Thur</option>
+                    <option value="Expresso-Marco-Zero">Expresso-Marco-Zero</option>
+                    <option value="Amazontur">Amazontur</option>
+                    <option value="Capital-Morena">Capital-Morena</option>
+                </select>
+                <div class="blocktitle">Linha</div>
+                <select name="Linha" id="Linha" class="select">
+                    
+                </select>
+                <button type="submit" class="button">Pesquisar</button>
+            </div>
+        </form>
+        </div>
+    </div>
+    <script src="opcoes.js"></script>
+</body>
+</html>
